@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="sidenav.css" />
+    <link rel="stylesheet" href="account.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.js"
+      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="nav" class="nav">
+      <div class="icon">
+        <ul>
+          <li>
+            <a title="Home" href="index.html"><i class="fa fa-home"></i></a>
+          </li>
+          <li>
+            <a href="About"><i class="fa fa-search"></i></a>
+          </li>
+          <li>
+            <a href="account.html"><i class="fa fa-edit"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-cog"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="hey">
+      <ul>
+        <li><a title="Home" href="#">DGSHOP</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet prefetch"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <body>
+      <div class="cotn_principal">
+        <div class="cont_centrar">
+          <div class="cont_login">
+            <div class="cont_info_log_sign_up">
+              <!-- LOGIN -->
+              <div class="col_md_login">
+                <div class="cont_ba_opcitiy">
+                  <h2>LOGIN</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                  <button class="btn_login" onclick="cambiar_login()">
+                    LOGIN
+                  </button>
+                </div>
+              </div>
+              <!-- SIGNUP -->
+              <div class="col_md_sign_up">
+                <div class="cont_ba_opcitiy">
+                  <h2>SIGN UP</h2>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur.</p>
+
+                  <button class="btn_sign_up" onclick="cambiar_sign_up()">
+                    SIGN UP
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cont_back_info">
+              <div class="cont_img_back_grey">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0074/6396/0633/products/Red_Hype_Hand_1_edited_square_500x500.png?v=1562199924"
+                  alt=""
+                />
+              </div>
+            </div>
+           
+            <div class="cont_forms">
+              <div class="cont_img_back_">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0074/6396/0633/products/Red_Hype_Hand_1_edited_square_500x500.png?v=1562199924"
+                  alt=""
+                />
+              </div>
+              <div class="cont_form_login">
+                <a href="#" onclick="ocultar_login_sign_up()"
+                  ><i class="material-icons">&#xE5C4;</i></a
+                >
+                <h2>LOGIN</h2>
+                <input type="text" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button class="btn_login" onclick="cambiar_login()">
+                  LOGIN
+                </button>
+              </div>
+
+              <div class="cont_form_sign_up">
+                <a href="#" onclick="ocultar_login_sign_up()"
+                  ><i class="material-icons">&#xE5C4;</i></a
+                >
+                <h2>SIGN UP</h2>
+                <input type="text" placeholder="Email" />
+                <input type="text" placeholder="User" />
+                <input type="password" placeholder="Password" />
+                <input type="password" placeholder="Confirm Password" />
+                <button class="btn_sign_up" onclick="cambiar_sign_up()">
+                  SIGN UP
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  
+
+    <script>
+     function cambiar_login() {
+  document.querySelector(".cont_forms").className =
+    "cont_forms cont_forms_active_login";
+  document.querySelector(".cont_form_login").style.display = "block";
+  document.querySelector(".cont_form_sign_up").style.opacity = "0";
+
+  setTimeout(function () {
+    document.querySelector(".cont_form_login").style.opacity = "1";
+  }, 400);
+
+  setTimeout(function () {
+    document.querySelector(".cont_form_sign_up").style.display = "none";
+  }, 200);
+}
+
+function cambiar_sign_up(at) {
+  document.querySelector(".cont_forms").className =
+    "cont_forms cont_forms_active_sign_up";
+  document.querySelector(".cont_form_sign_up").style.display = "block";
+  document.querySelector(".cont_form_login").style.opacity = "0";
+
+  setTimeout(function () {
+    document.querySelector(".cont_form_sign_up").style.opacity = "1";
+  }, 100);
+
+  setTimeout(function () {
+    document.querySelector(".cont_form_login").style.display = "none";
+  }, 400);
+}
+
+function ocultar_login_sign_up() {
+  document.querySelector(".cont_forms").className = "cont_forms";
+  document.querySelector(".cont_form_sign_up").style.opacity = "0";
+  document.querySelector(".cont_form_login").style.opacity = "0";
+
+  setTimeout(function () {
+    document.querySelector(".cont_form_sign_up").style.display = "none";
+    document.querySelector(".cont_form_login").style.display = "none";
+  }, 500);
+}
+
+    </script>
+  </body>
+</html>
