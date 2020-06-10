@@ -331,3 +331,25 @@ nav a:nth-child(3):hover ~ #indicator {
 .btn1:before {
   width: 100%;
 }
+
+@media screen and (max-width: 900px) {
+  .welcome {
+    font-size: 20px;
+    left: 60%;
+  }
+  .hero-text {
+    font-size: 45px;
+    left: 57%;
+  }
+  .btn {
+    font-size: 40px;
+    width: 4em;
+    margin: 0 0 0 80px;
+    margin-top: -50%;
+    text-align: center;
+  }
+  nav {
+    right: 0;
+    left: 3.2em;
+  }
+}

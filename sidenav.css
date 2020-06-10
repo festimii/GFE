@@ -166,3 +166,12 @@ body h1 {
     font-size: 7.5vw;
   }
 }
+
+@media screen and (max-width: 600px) {
+  #nav {
+    width: 76px;
+  }
+  .icon {
+    width: 76px;
+  }
+}
