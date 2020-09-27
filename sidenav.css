@@ -1,10 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:500);
 body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-
+  overflow: auto;
   font-family: "Raleway", sans-serif;
 }
 body h1 {
@@ -168,10 +164,15 @@ body h1 {
 }
 
 @media screen and (max-width: 600px) {
-  #nav {
+  .heyhey {
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
     width: 76px;
+    margin: 0 0 0 0;
+    margin-left: 20px;
   }
   .icon {
-    width: 76px;
+    width: 5em;
   }
 }
